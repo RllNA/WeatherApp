@@ -7,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
+  //lazyloading
   rootPage:any = 'WelcomePage';
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

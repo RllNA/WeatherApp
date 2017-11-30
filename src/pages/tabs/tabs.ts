@@ -7,13 +7,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
+  
+  //defining variables
   tab1Root='WeatherPage';
   tab2Root='DetailsPage';
   tab3Root='ForecastPage';
   myIndex: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  this.myIndex=navParams.data.tabIndex || 0;
+  //index for tabs
+    this.myIndex=navParams.data.tabIndex || 0;
   }
 
   ionViewDidLoad() {
