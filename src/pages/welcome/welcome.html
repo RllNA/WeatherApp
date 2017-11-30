@@ -1,0 +1,30 @@
+<ion-slides pager>
+    
+      <!-- This is first slider -->
+      <ion-slide style="background-color: #41c6f1">
+        <ion-icon ios="ios-sunny" md="md-sunny" style="zoom:5.0;"></ion-icon>
+        <h1 style="color: #ebebeb">Is it raining? How cold is it?</h1>
+      </ion-slide>
+      
+      <!-- This is second slider -->
+      <ion-slide style="background-color: #8BC34A">
+        <ion-icon ios="ios-partly-sunny" md="md-partly-sunny" style="zoom:5.0;"></ion-icon>
+        <h1 style="color: #ebebeb">Is it windy outside? How much has it rained?</h1>      </ion-slide>
+    
+      <!-- This is third slider -->
+      <ion-slide style="background-color: #FF9800">
+        <ion-icon ios="ios-umbrella" md="md-umbrella" style="zoom:5.0;"></ion-icon>
+        <h1 style="color: #ebebeb">What's the weather like tomorrow? How about the day after that?</h1>
+      </ion-slide>
+    
+        <!-- This is final slider -->
+      <ion-slide class="bg-image">
+        <h1 style="color: #ebebeb">Weather App</h1>
+        <h4 style="color: #ebebeb">Find all the information about the current weather wherever you are!</h4>
+    
+        <div style="position:absolute; bottom: 120px; text-align:center; z-index:1000; width:100%">
+          <button ion-button round [navPush]="'HomePage'" style="color: #ebebeb">Let's Go!</button>
+        </div>
+      </ion-slide>
+      
+    </ion-slides>

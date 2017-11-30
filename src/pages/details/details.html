@@ -1,0 +1,44 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title text-center>Details</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-grid *ngIf="weather">
+          <ion-row>
+              <ion-col>
+                <ion-item text-center>{{date}}</ion-item>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item><h1 text-center>{{weather.name}}</h1></ion-item>
+            </ion-col>
+          </ion-row>
+        <ion-card>
+          <ion-card-content>
+          <ion-row>
+             <ion-col><ion-item>Wind</ion-item></ion-col>
+             <ion-col><ion-item>{{weather.wind.speed}}m/s</ion-item></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Humidity</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.main.humidity}}%</ion-item></ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col><ion-item>Pressure</ion-item></ion-col>
+              <ion-col><ion-item>{{weather.main.pressure}}</ion-item></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Clouds</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.clouds.all}}%</ion-item></ion-col>
+         </ion-row>
+        </ion-card-content>
+        </ion-card>
+        </ion-grid>
+  </ion-content>
+  

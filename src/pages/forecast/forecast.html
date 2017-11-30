@@ -1,0 +1,84 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title text-center>3 Day Forecast</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-grid *ngIf="weather">
+         <ion-row>
+            <ion-col>
+              <ion-item><h1 text-center>{{weather.city.name}}</h1></ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-card>
+              <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-item><h2 text-center>{{weather.list[0].dt_txt}}</h2></ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Weather</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.list[0].weather[0].main}}</ion-item></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-item>Description</ion-item></ion-col>
+          <ion-col><ion-item>{{weather.list[0].weather[0].description}}</ion-item></ion-col>
+        </ion-row>
+          <ion-row>
+             <ion-col><ion-item>Temperature</ion-item></ion-col>
+             <ion-col><ion-item>{{weather.list[0].main.temp}}</ion-item></ion-col>
+          </ion-row>
+        </ion-card-content>
+        </ion-card>
+<!--next day-->
+<ion-card>
+  <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-item><h2 text-center>{{weather.list[8].dt_txt}}</h2></ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Weather</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.list[8].weather[0].main}}</ion-item></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-item>Description</ion-item></ion-col>
+          <ion-col><ion-item>{{weather.list[8].weather[0].description}}</ion-item></ion-col>
+        </ion-row>
+          <ion-row>
+             <ion-col><ion-item>Temperature</ion-item></ion-col>
+             <ion-col><ion-item>{{weather.list[8].main.temp}}</ion-item></ion-col>
+          </ion-row>
+        </ion-card-content>
+        </ion-card>
+<!--next day-->
+<ion-card>
+  <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-item><h2 text-center>{{weather.list[16].dt_txt}}</h2></ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Description</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.list[16].weather[0].description}}</ion-item></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><ion-item>Weather</ion-item></ion-col>
+            <ion-col><ion-item>{{weather.list[16].weather[0].main}}</ion-item></ion-col>
+        </ion-row>
+          <ion-row>
+             <ion-col><ion-item>Temperature</ion-item></ion-col>
+             <ion-col><ion-item>{{weather.list[16].main.temp}}</ion-item></ion-col>
+          </ion-row>
+        </ion-card-content>
+        </ion-card>
+        </ion-grid>
+  </ion-content>
+  

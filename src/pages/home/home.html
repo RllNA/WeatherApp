@@ -1,14 +1,30 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Weather App</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div padding><img src="assets/imgs/frontpage.png" class="Absolute-Center"></div>
+
+    <ion-list>
+        <ion-item class="select">
+          <ion-label>City</ion-label>
+          <ion-select>
+            <ion-option value="helsinki">Helsinki</ion-option>
+            <ion-option value="espoo">Espoo</ion-option>
+            <ion-option value="oulu">Oulu</ion-option>
+            <ion-option value="rovaniemi">Rovaniemi</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+  <ion-item no-lines class="button2"><button ion-button block outline disabled (click)="doCity()" style="padding:25px">Go</button></ion-item>
+      
+  <ion-item no-lines class="button"><button ion-button block large [navPush]="'TabsPage'">Use current location</button></ion-item>
+
 </ion-content>
